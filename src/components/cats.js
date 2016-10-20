@@ -28,6 +28,7 @@ const Cats = React.createClass({
     })
   },
   handleSubmit: function (e) {
+    e.preventDefault()
     xhr({
       method: 'GET',
       url: '/cats.json',
