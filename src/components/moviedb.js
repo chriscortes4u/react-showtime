@@ -49,7 +49,7 @@ const Moviedb = React.createClass({
         }, 'Home'),
       //  h('pre', JSON.stringify(this.state.movies, null, 4)),
         h('div', this.state.movies.map(movie =>
-          h('a', {href:'http://www.imdb.com/title/'+ movie.imdbId } h('img', {
+          h('a', {href:'http://www.imdb.com/title/'+ movie.imdbID } h('img', {
             src: movie.Poster
 
           }))
